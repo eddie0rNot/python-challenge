@@ -1,4 +1,12 @@
 #create script that analyzes budget_data.csv
+
+#import os module
+import os
+
+#import csv module
+import csv
+
+
 #calculate total number of months in dataset
 #calculate net total profit/loss over entire timeframe
 #calculate average profit/loss by period
