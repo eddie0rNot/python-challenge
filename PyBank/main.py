@@ -12,10 +12,14 @@ csvpath = os.path.join('Resources','budget_data.csv')
 with open(csvpath) as csvfile:
     datareader = csv.reader(csvfile,delimiter=",")
     csv_header = next(csvfile)
-    #calculate average profit
+#assign empty lists
     profits = []
+    months_number = []
     for data in datareader:
+#add items to lists
         profits.append(int(data[1]))
+        months_number.append(data[0])
+#calculate average profit
         def average(profits):
             length = len(profits)
             total = 0.0
@@ -23,24 +27,15 @@ with open(csvpath) as csvfile:
                 total += profit
             return total / length
     print(average(profits))
-    
-with open(csvpath) as csvfile:
-    datareader = csv.reader(csvfile,delimiter=",")
-    csv_header = next(csvfile)
-    #calculate total number of months in dataset
-    months_number = []
-    for data in datareader:
-        months_number.append(data[0])
-        count = len(months_number)
-    print(count)
-        
-with open(csvpath) as csvfile:
-    datareader = csv.reader(csvfile,delimiter=",")
-    csv_header = next(csvfile)
-    #calculate net total profit/loss over entire timeframe
-    for data in datareader:
-        sum(profits)
+#calculate sum of profits for entire period
+    sum(profits)
     print(sum(profits))
+#calculate total number of months in the dataset    
+    count = len(months_number)
+    print(count)
+    
+
+        
 
 
 #calculate largest period increase, month and amount
