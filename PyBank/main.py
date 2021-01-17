@@ -12,6 +12,7 @@ csvpath = os.path.join('Resources','budget_data.csv')
 with open(csvpath) as csvfile:
     datareader = csv.reader(csvfile,delimiter=",")
     csv_header = next(csvfile)
+    #calculate average profit
     profits = []
     for data in datareader:
         profits.append(int(data[1]))
@@ -21,7 +22,18 @@ with open(csvpath) as csvfile:
             for profit in profits:
                 total += profit
             return total / length
-    print(float(average(profits)))
+    print(average(profits))
+    
+with open(csvpath) as csvfile:
+    datareader = csv.reader(csvfile,delimiter=",")
+    csv_header = next(csvfile)
+    #calculate total number of months in dataset
+    months_number = []
+    for data in datareader:
+        months_number.append(data[0])
+        count = len(months_number)
+    print(count)
+        
 
 #calculate total number of months in dataset
 #calculate net total profit/loss over entire timeframe
