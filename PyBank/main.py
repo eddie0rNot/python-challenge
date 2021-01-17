@@ -34,10 +34,15 @@ with open(csvpath) as csvfile:
         count = len(months_number)
     print(count)
         
+with open(csvpath) as csvfile:
+    datareader = csv.reader(csvfile,delimiter=",")
+    csv_header = next(csvfile)
+    #calculate net total profit/loss over entire timeframe
+    for data in datareader:
+        sum(profits)
+    print(sum(profits))
 
-#calculate total number of months in dataset
-#calculate net total profit/loss over entire timeframe
-#calculate average profit/loss by period
+
 #calculate largest period increase, month and amount
 #calculate largest period decrease, month and amount
 #print results to terminal
