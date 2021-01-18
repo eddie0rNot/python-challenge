@@ -4,4 +4,4 @@
 
 #Eddie Buckalew
 
-#edit to test pushing commits to github repo
+#ran in to issues completing the PyPoll challenge
