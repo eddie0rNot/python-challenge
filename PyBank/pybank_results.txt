@@ -1,0 +1,7 @@
+Financial Analysis 
+------------------- 
+Total Months In Review: 86
+Total Sales: $38382578
+The average profit by period is $446309
+Greatest Increase In Profits: $1170593 TBD
+Greatest Decrease In Profits: $-1196225 TBD
